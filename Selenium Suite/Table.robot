@@ -63,6 +63,7 @@ Print Name
         Click Element    link=Next
 
     END
+
 Total Number
     Open Browser   https://datatables.net/extensions/select/examples/initialisation/checkbox.html   browser=gc
     ##Click Element   xpath= //div[@id='example_info']
