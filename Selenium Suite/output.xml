@@ -1,52 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210708 13:45:38.568" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.3 (Python 3.9.5 on win32)" generated="20210709 09:56:16.216" rpa="false" schemaversion="2">
 <suite id="s1" name="Table" source="C:\Users\rajeshwarib\PycharmProjects\pythonProject\Selenium Suite\Table.robot">
 <test id="s1-t1" name="Open EMR Site">
 <kw name="Append To Environment Variable" library="OperatingSystem">
 <arg>Path</arg>
 <arg>D:\\Browsers\\chromedriver</arg>
 <doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20210708 13:45:39.105" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files (x86)\Sennheiser\SenncomSDK\;C:\Program Files\Git\cmd;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\;C:\Users\rajeshwarib\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1.3\bin;;D:\Browsers\chromedriver'.</msg>
-<status status="PASS" starttime="20210708 13:45:39.105" endtime="20210708 13:45:39.105"/>
+<msg timestamp="20210709 09:56:16.823" level="INFO">Environment variable 'Path' set to value 'C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Webex\Webex\Applications;C:\Program Files (x86)\Sennheiser\SenncomSDK\;C:\Program Files\Git\cmd;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\Scripts;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\Scripts\;C:\Users\rajeshwarib\AppData\Local\Programs\Python\Python39\;C:\Users\rajeshwarib\AppData\Local\Microsoft\WindowsApps;;C:\Program Files\JetBrains\PyCharm Community Edition 2021.1.3\bin;;D:\Browsers\chromedriver'.</msg>
+<status status="PASS" starttime="20210709 09:56:16.822" endtime="20210709 09:56:16.823"/>
 </kw>
 <kw name="Total Number">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://datatables.net/extensions/select/examples/initialisation/checkbox.html</arg>
 <arg>browser=gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210708 13:45:39.107" level="INFO">Opening browser 'gc' to base url 'https://datatables.net/extensions/select/examples/initialisation/checkbox.html'.</msg>
-<status status="PASS" starttime="20210708 13:45:39.106" endtime="20210708 13:45:48.560"/>
+<msg timestamp="20210709 09:56:16.826" level="INFO">Opening browser 'gc' to base url 'https://datatables.net/extensions/select/examples/initialisation/checkbox.html'.</msg>
+<status status="PASS" starttime="20210709 09:56:16.825" endtime="20210709 09:56:31.113"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210709 09:56:31.113" endtime="20210709 09:56:31.312"/>
 </kw>
 <kw name="Set Local Variable" library="BuiltIn">
 <arg>${text}</arg>
 <arg>Showing 1 to 25 of 57 entries</arg>
 <doc>Makes a variable available everywhere within the local scope.</doc>
-<msg timestamp="20210708 13:45:48.563" level="INFO">${text} = Showing 1 to 25 of 57 entries</msg>
-<status status="PASS" starttime="20210708 13:45:48.561" endtime="20210708 13:45:48.563"/>
+<msg timestamp="20210709 09:56:31.313" level="INFO">${text} = Showing 1 to 25 of 57 entries</msg>
+<status status="PASS" starttime="20210709 09:56:31.312" endtime="20210709 09:56:31.313"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${text}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 13:45:48.564" endtime="20210708 13:45:48.565"/>
+<status status="PASS" starttime="20210709 09:56:31.313" endtime="20210709 09:56:31.314"/>
 </kw>
 <kw name="Remove String" library="String">
 <var>${text1}</var>
 <arg>${text}</arg>
 <arg>entries</arg>
 <doc>Removes all ``removables`` from the given ``string``.</doc>
-<msg timestamp="20210708 13:45:48.569" level="INFO">${text1} = Showing 1 to 25 of 57 </msg>
-<status status="PASS" starttime="20210708 13:45:48.565" endtime="20210708 13:45:48.569"/>
+<msg timestamp="20210709 09:56:31.314" level="INFO">${text1} = Showing 1 to 25 of 57 </msg>
+<status status="PASS" starttime="20210709 09:56:31.314" endtime="20210709 09:56:31.314"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${text1}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20210708 13:45:48.570" endtime="20210708 13:45:48.571"/>
+<status status="PASS" starttime="20210709 09:56:31.315" endtime="20210709 09:56:31.315"/>
 </kw>
-<status status="PASS" starttime="20210708 13:45:39.106" endtime="20210708 13:45:48.571"/>
+<kw name="Table Should Contain" library="SeleniumLibrary">
+<arg>xpath=//table[@id='example']</arg>
+<arg>Brenden Wagner</arg>
+<doc>Verifies table contains text ``expected``.</doc>
+<status status="PASS" starttime="20210709 09:56:31.315" endtime="20210709 09:56:31.795"/>
 </kw>
-<status status="PASS" starttime="20210708 13:45:39.103" endtime="20210708 13:45:48.572"/>
+<kw name="Get Table Cell" library="SeleniumLibrary">
+<var>${c}</var>
+<arg>xpath= //table[@id='example']</arg>
+<arg>2</arg>
+<arg>1</arg>
+<doc>Returns contents of a table cell.</doc>
+<msg timestamp="20210709 09:56:31.885" level="INFO">${c} = </msg>
+<status status="PASS" starttime="20210709 09:56:31.796" endtime="20210709 09:56:31.885"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Column is</arg>
+<arg>${c}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20210709 09:56:31.885" endtime="20210709 09:56:31.886"/>
+</kw>
+<status status="PASS" starttime="20210709 09:56:16.824" endtime="20210709 09:56:31.886"/>
+</kw>
+<status status="PASS" starttime="20210709 09:56:16.820" endtime="20210709 09:56:31.887"/>
 </test>
-<status status="PASS" starttime="20210708 13:45:38.573" endtime="20210708 13:45:48.576"/>
+<status status="PASS" starttime="20210709 09:56:16.223" endtime="20210709 09:56:31.963"/>
 </suite>
 <statistics>
 <total>

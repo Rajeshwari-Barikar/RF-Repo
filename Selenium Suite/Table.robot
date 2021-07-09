@@ -67,7 +67,13 @@ Print Name
 Total Number
     Open Browser   https://datatables.net/extensions/select/examples/initialisation/checkbox.html   browser=gc
     ##Click Element   xpath= //div[@id='example_info']
+    Maximize Browser Window
     Set Local Variable    ${text}   Showing 1 to 25 of 57 entries
     Log To Console     ${text}
     ${text1}     Remove String     ${text}    entries
     Log To Console     ${text1}
+    Table Should Contain    xpath=//table[@id='example']   Brenden Wagner
+    ${c}    Get Table Cell    xpath= //table[@id='example']    2    1
+    Log To Console     ${c}
+    
+    

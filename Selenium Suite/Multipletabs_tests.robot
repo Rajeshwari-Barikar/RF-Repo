@@ -24,8 +24,8 @@ Login to PhpAdmin
     ##Get Text    xpath=//div[@id='js-https-mismatch']/following::div
     ${Err}  Get Text    (//div[@role='alert'])[2]
     Log To Console    ${Err}
-    Switch Window   MAIN
+    Close Window
 
-    Close All Browsers
+
 
 

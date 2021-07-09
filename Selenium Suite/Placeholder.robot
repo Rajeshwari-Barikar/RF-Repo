@@ -1,7 +1,7 @@
 *** Settings ***
 Library     OperatingSystem
 Library     SeleniumLibrary
-Library    XML
+
 *** Variables ***
 
 *** Test Cases ***
